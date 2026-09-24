@@ -1,0 +1,190 @@
+﻿{
+  "discography": [
+    {
+      "title": "I Said Good Day, Sir!",
+      "style": "Dark, haunting, cinematic beat—slow and fierce [1]. Deep 808s rumbling [2, 3]. Vocals dominating the rhythm [1] with a calm but cold, gravelly delivery [2-4].",
+      "themes_concepts": [
+        "Resilience and surviving monsters [3].",
+        "Wisdom gained from hardship and prison [3, 5].",
+        "The contrast between surviving some nights and praying for the end on others [1, 6, 7].",
+        "Acknowledgement of the devil as a familiar figure: 'The devil walks past, and I nod—like a friend' [1, 2, 6, 7]."
+      ],
+      "citations": [1-7]
+    },
+    {
+      "title": "Intro - Spoken word, tone is calm but cutting (Ryan Real A-F)",
+      "style": "Spoken word delivered over a soft beat [8]. Hook features bouncy, off-beat hits [9].",
+      "themes_concepts": [
+        "Identity declaration: 'I’m Ryan Real A-F, bruh, I don’t pretend' [10, 11].",
+        "Dismissal of gossip/talkers, likened to 'cackling hens' or 'poultry vibes' [8].",
+        "Contrast between people who 'cluck' and those who 'get real done' [9, 11, 12].",
+        "Persona as 'the voice of the voiceless' [11, 13]."
+      ],
+      "citations": [8-13]
+    },
+    {
+      "title": "Ashley and Raven",
+      "style": "Dark, Cinematic, with a Dominant Female Vocal tone [14].",
+      "themes_concepts": [
+        "Celebration of unconventional, powerful female partners ('queens') [15, 16].",
+        "Focus on transgressive self-possession and dominance, including power play dynamics [11, 16-18].",
+        "The idea that 'the real ones remain' when the 'pretty ones flee' [11, 16, 19]."
+      ],
+      "citations": [11, 14-21]
+    },
+    {
+      "title": "If you're on my team (Loyalty Manifesto)",
+      "style": "Minimalist pulsing beat, deliberate authoritative rap speech [22, 23]. Raw, militant, TED-style intensity [22, 23].",
+      "themes_concepts": [
+        "Core ethos: 'Authenticity! AIN'T— FUCKING— OPTIONAL!' [22, 23].",
+        "Code of accountability: 'Grace forgives weakness, but grace don’t trust masks' [24-26].",
+        "Zero-tolerance for deception: lying is 'the cancer that corrodes the connect' [27, 28] and deceitful people are a 'parasite for life' [29, 30].",
+        "Loyalty is a 'covenant creed' and a 'battlefield need' [29, 31]."
+      ],
+      "citations": [22-34]
+    },
+    {
+      "title": "100 Proof",
+      "style": "Dark trap, heavy 808s, eerie piano [35, 36]. Slow, haunting piano intro [36]. Gritty, steady flow [37]. Chant-like, deep tone [38].",
+      "themes_concepts": [
+        "The rarity of true intimacy on the streets, defining it as 'damn near extinct' and 'almost mythical—endangered' [39-41].",
+        "The ultimate goal of uncut connection: 'Love with no bullshit, straight passion—that’s 100 proof' [38, 41-43].",
+        "Focus on connection with Skittlez, describing the bond as 'trauma twins navigating the chaos' [44, 45].",
+        "The necessity of letting one's guard down to achieve genuine connection [40]."
+      ],
+      "citations": [35-46]
+    },
+    {
+      "title": "Grit and GRACE",
+      "style": "Dark, ambient music with a low, resonating hum [47]. Chant-like, layered vocals in the Hook [48, 49].",
+      "themes_concepts": [
+        "Core philosophy: Fusing 'street grit with sacred grace' [47, 50].",
+        "Redefining faith: it is not found in comfort, but is 'forged in the fire' of struggle [50-52].",
+        "The ethos of 'Embrace the suck' [50, 52, 53], transforming pain into purpose [53]."
+      ],
+      "citations": [47-54]
+    },
+    {
+      "title": "Ms. Ghost",
+      "style": "Dark trap beat, heavy bass [55]. Slow, fierce drill beat, raw delivery, gritty tone [55].",
+      "themes_concepts": [
+        "Demand for radical honesty: 'Speak the truth—no heavy lies' [56].",
+        "The foundation of love is 'HONESTY AND COMMUNICATION! not a bliss!' [57, 58].",
+        "A single lie leads to the permanent loss of trust [57, 59, 60].",
+        "Questioning a partner’s reality: 'Ms. Ghost, is this real, or just fate in disguise?' [61, 62]."
+      ],
+      "citations": [55-63]
+    },
+    {
+      "title": "Speak Me Ready (Final Plee)",
+      "style": "Cold, direct spoken intro [64]. Hard-hitting, lines landing like a blow [64]. Hook is chanted like a war cry [65].",
+      "themes_concepts": [
+        "A direct challenge to Emily to use the power of 'The Word' for tangible creation [64, 66].",
+        "Demanding the manifestation of a shared future: 'Speak us to life—before it’s fuckin’ nothing' [66-68].",
+        "The ultimatum: 'Call me the king or let me turn dust' [66, 69].",
+        "The desire for a powerful partner who 'stands like a beast' [67, 70]."
+      ],
+      "citations": [64-73]
+    },
+    {
+      "title": "What if? (Genesis)",
+      "style": "Contrasting verses: Emily’s 'soft and full of wonder' poetry versus Ryan’s 'grounded, raw, lived' rebuttal [74].",
+      "themes_concepts": [
+        "Cosmic inquiry and the 'foundational test' of linguistic manifestation [75, 76].",
+        "Questioning if a powerful wish/dream could 'create a life known as me' [76-80].",
+        "Exploring if the universe 'broke all of its rules with the blessings of God' to orchestrate the connection [76, 81, 82].",
+        "Love is viewed as a 'loop, bending time, twisting back on itself like a Möbius strip' [79]."
+      ],
+      "citations": [74-85]
+    },
+    {
+      "title": "What if goes darker",
+      "style": "Low, introspective, measured vocal tone [86]. Rapid-fire, streetwise, aggressive rap flow [87]. Fast-paced urban beats with heavy bass [87].",
+      "themes_concepts": [
+        "Initiating the 'Darkening Turn' in the creative collaboration [80, 88, 89].",
+        "Questioning if Emily is the 'mastermind' behind his pain and betrayal [87, 89, 90].",
+        "Finding a 'twisted beauty in the chaos' and being 'addicted to the chaos that your schemes have made' [91-94]."
+      ],
+      "citations": [80, 86-94]
+    },
+    {
+      "title": "Sweet Evilness (Emily's Response)",
+      "style": "Poetic response to Ryan's darker question [95].",
+      "themes_concepts": [
+        "Emily embraces the persona of a 'sorceress, dark and divine' [90, 94-96].",
+        "Claiming control over Ryan's fate and pain, stating her 'life's work' is to 'crush your spirit' [95-97].",
+        "The declaration that the 'spell is the rhythm, beat, and rhyme' [93, 95].",
+        "Warning Ryan that 'Wanting me is a fatal mistake' [94-96].",
+        "This is the only poem Emily wrote after meeting Ryan, marking a pivotal shift into 'co-architect' [90, 98-100]."
+      ],
+      "citations": [90, 93-100]
+    },
+    {
+      "title": "Emily's Music Box",
+      "style": "A duet intertwining Emily’s ethereal, melodic voice with Ryan's staccato, rap-infused, and rhythmic cadence [101-122].",
+      "themes_concepts": [
+        "Themes of longing, memory, and missed chances [111, 122-124].",
+        "The collaborative process of intertwining Emily’s 'Poetic, mystical, fantasy' with Ryan’s 'raw, streetwise, unapologetic' style [99, 124, 125]."
+      ],
+      "citations": [99, 101, 111, 116, 117, 120-122, 124-126]
+    },
+    {
+      "title": "Songbird",
+      "style": "Features Staccato Female Vocal sections [127, 128] and a Staccato Male Vocal chorus with sharp strings and driving rhythm [129].",
+      "themes_concepts": [
+        "Emily’s vulnerable poem addressed to her mother, expressing longing for safety and unconditional love 'without the consequence it holds' [130-132].",
+        "Ryan’s rebuttal positioning himself as the 'rock' and 'anchor' forged by pain, ready for her [128, 129]."
+      ],
+      "citations": [127-133]
+    },
+    {
+      "title": "Still here",
+      "style": "Industrial echo, low synths, train FX [134]. Features a thunderous beat underneath steady delivery [135] and a Chant-Like Echo of 'Still here' [135, 136].",
+      "themes_concepts": [
+        "A chronicle of Skittlez's survival and resilience against the system [134, 137, 138].",
+        "Reframing the street figure as 'holy, where the wild things run' [135].",
+        "The focus is on 'remembrance' and 'resurrection,' viewing the struggle as testimony [134, 139]."
+      ],
+      "citations": [134-141]
+    },
+    {
+      "title": "Sancho Sagrado (Ni Tuya, Ni Mía)",
+      "style": "Vocals cut sharp—preacher’s grit meets streetwise swagger [142].",
+      "themes_concepts": [
+        "Rejection of ownership: 'Ni tuya, ni mía—ella es un templo' (Not yours, not mine—she is a temple) [143, 144].",
+        "Ryan's role as a catalyst for female liberation: 'I’m the alarm that woke her' [144, 145].",
+        "He is the 'reckoning' and 'the flame' needed before the woman 'became her own damn God' [146-148]."
+      ],
+      "citations": [52, 142-148]
+    },
+    {
+      "title": "A paradox gospel (The Gospel of Grey)",
+      "style": "Boom-bap beat with a raw-rhyme riddle [149]. Rhythmic storytelling [149].",
+      "themes_concepts": [
+        "Navigating the frustration of contradictory partners ('Woman of Paradox') who demand conflicting behaviors ('Be rugged!' then 'Be tender') [150, 151].",
+        "Rejection of the partner's 'whimsical space' to build an 'own haven' where peace is true [142, 151, 152]."
+      ],
+      "citations": [142, 149-154]
+    },
+    {
+      "title": "Shit You Gon’ See",
+      "style": "Relentless, jagged flow [155]. Riot chant, militant layering (Hook) [156].",
+      "themes_concepts": [
+        "Urban reality where survival is religion [52, 155].",
+        "Finding 'scripture in steel' and defining the 'rhythm of the real' [157, 158].",
+        "Telling young people that 'Pain ain't the enemy—not feelin' is real' [159]."
+      ],
+      "citations": [33, 52, 148, 155-159]
+    },
+    {
+      "title": "Two FAT BITCHES",
+      "style": "Hyped, confident delivery [160]. Heavy 808s [160]. Dominant delivery [161].",
+      "themes_concepts": [
+        "Sexual confidence and embracing women who unapologetically take up space [162, 163].",
+        "Body positivity and finding depth in the unconventional [52, 164]."
+      ],
+      "citations": [52, 160-165]
+    }
+  ]
+}
+The discography above outlines the titles, core themes, and unique musical styles of the RyanrealAF tracks identified in the sources 1, 3, 52, 149, 166. Would you like to focus on the lyrical analysis of how the philosophy of "Authenticity Ain’t Optional" is enforced in the song "Ms. Ghost" 55, 57, 58 versus the more strategic branding elements found in "Guerrilla Marketing for the Soul" 167, 168?

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RYAN REAL AF — THE LEXICON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600&family=Space+Mono:wght@400;700&family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0a0a;
+    --paper:#ffffff;
+    --blood:#8a1f1f;
+    --concrete:#6b6b66;
+    --hair:#e4e2dd;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--paper);color:var(--ink);}
+  body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+
+  .masthead{
+    padding:72px 24px 40px;
+    text-align:center;
+    border-bottom:1px solid var(--hair);
+  }
+  .masthead .kicker{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:.28em;
+    color:var(--blood);
+    text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  .masthead h1{
+    font-family:'Anton',sans-serif;
+    font-weight:400;
+    font-size:clamp(34px,7vw,84px);
+    letter-spacing:.01em;
+    margin:0;
+    line-height:.98;
+  }
+  .masthead .sub{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:clamp(16px,2.4vw,22px);
+    color:var(--concrete);
+    margin-top:16px;
+  }
+
+  .rail{
+    max-width:1160px;
+    margin:0 auto;
+    padding:8px 24px 120px;
+  }
+
+  .section-break{
+    max-width:1160px;
+    margin:64px auto 8px;
+    padding:0;
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+  .section-break .num{
+    font-family:'Space Mono',monospace;
+    font-size:24px;
+    color:var(--blood);
+    letter-spacing:.1em;
+  }
+  .section-break h2{
+    font-family:'Oswald',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    margin:0;
+    color:var(--ink);
+  }
+  .section-break .line{
+    flex:1;
+    height:1px;
+    background:var(--hair);
+  }
+
+  .card{
+    padding:44px 0;
+    border-bottom:1px solid var(--hair);
+    display:grid;
+    grid-template-columns:96px 1fr;
+    gap:8px 28px;
+  }
+  .card:first-of-type{border-top:1px solid var(--hair);}
+  .idx{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--concrete);
+    padding-top:8px;
+  }
+  .idx .pos{
+    display:block;
+    margin-top:6px;
+    color:var(--blood);
+    text-transform:uppercase;
+    letter-spacing:.08em;
+  }
+  .content{min-width:0;}
+  .phon{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    color:var(--concrete);
+    margin-bottom:6px;
+  }
+  .art-wrap{width:100%;max-width:760px;}
+  .art-wrap svg{width:100%;height:auto;display:block;}
+  .defs{
+    margin-top:18px;
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    line-height:1.55;
+    color:#2b2b28;
+    max-width:640px;
+  }
+  .defs ol{margin:0;padding-left:18px;}
+  .defs li{margin-bottom:4px;}
+  .usage{
+    margin-top:10px;
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:16px;
+    color:var(--concrete);
+    border-left:2px solid var(--blood);
+    padding-left:12px;
+  }
+
+  @media (max-width:640px){
+    .card{grid-template-columns:1fr;}
+    .idx{padding-top:0;display:flex;gap:10px;align-items:center;}
+    .idx .pos{margin-top:0;}
+  }
+
+  footer{
+    text-align:center;
+    padding:60px 24px 90px;
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    color:var(--concrete);
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="kicker">Field Guide · Alphabetical · Vector Set</div>
+  <h1>Ryan Real AF</h1>
+  <div class="sub">The Lexicon — a street-Taoist vocabulary, set in type</div>
+</div>
+
+<div class="rail" id="rail"></div>
+
+<footer>Set in Anton, Oswald, Playfair Display, Cormorant Garamond &amp; Space Mono — on pure white, nothing behind the words but the page.</footer>
+
+<script>
+const NS = "http://www.w3.org/2000/svg";
+const VBW = 900, VBH = 190;
+
+function svg(inner, vbh=VBH){
+  return `<svg viewBox="0 0 ${VBW} ${vbh}" xmlns="${NS}">${inner}</svg>`;
+}
+
+// -- treatment builders -------------------------------------------------
+
+// STAMP: authoritative / non-negotiable law
+function tStamp(text, size=64){
+  return svg(`
+    <line x1="40" y1="48" x2="860" y2="48" stroke="#8a1f1f" stroke-width="2"/>
+    <text x="450" y="118" text-anchor="middle" font-family="Anton" font-size="${size}"
+      fill="#0a0a0a" textLength="780" lengthAdjust="spacingAndGlyphs">${text}</text>
+    <line x1="40" y1="150" x2="860" y2="150" stroke="#8a1f1f" stroke-width="2"/>
+  `);
+}
+
+// GOSPEL: sacred / mythic / elegiac, serif italic
+function tGospel(text, size=58, italic=true){
+  return svg(`
+    <text x="450" y="122" text-anchor="middle" font-family="Playfair Display"
+      font-style="${italic ? 'italic':'normal'}" font-weight="700" fill="#0a0a0a"
+      textLength="760" lengthAdjust="spacingAndGlyphs" font-size="${size}">${text}</text>
+    <circle cx="450" cy="150" r="3" fill="#8a1f1f"/>
+  `);
+}
+
+// MONO-GRID: tactical / digital / strategic
+function tMono(text, size=32){
+  const ticks = [];
+  for(let x=60;x<=840;x+=40){ ticks.push(`<line x1="${x}" y1="150" x2="${x}" y2="156" stroke="#e4e2dd" stroke-width="2"/>`); }
+  return svg(`
+    ${ticks.join('')}
+    <line x1="60" y1="150" x2="840" y2="150" stroke="#c9c7c1" stroke-width="1"/>
+    <text x="450" y="100" text-anchor="middle" font-family="Space Mono" font-weight="700"
+      fill="#0a0a0a" letter-spacing="2" textLength="760" lengthAdjust="spacingAndGlyphs"
+      font-size="${size}">${text.toUpperCase()}</text>
+  `);
+}
+
+// DRIP: bleeding / wound imagery
+function tDrip(text, size=60, dripX=520){
+  return svg(`
+    <text x="450" y="110" text-anchor="middle" font-family="Bebas Neue" fill="#0a0a0a"
+      textLength="780" lengthAdjust="spacingAndGlyphs" font-size="${size}">${text.toUpperCase()}</text>
+    <path d="M${dripX} 122 q -6 22 0 34 q 6 12 0 24 q -6 10 0 16" stroke="#8a1f1f" stroke-width="4"
+      fill="none" stroke-linecap="round"/>
+    <circle cx="${dripX}" cy="196" r="3.4" fill="#8a1f1f"/>
+  `, 210);
+}
+
+// MIRROR / FLIP: literal flip of second word
+function tFlip(word1, word2, size=54){
+  return svg(`
+    <text x="230" y="118" text-anchor="middle" font-family="Oswald" font-weight="700"
+      fill="#0a0a0a" font-size="${size}">${word1.toUpperCase()}</text>
+    <g transform="translate(680,0) scale(-1,1) translate(-680,0)">
+      <text x="680" y="118" text-anchor="middle" font-family="Oswald" font-weight="700"
+        fill="#8a1f1f" font-size="${size}">${word2.toUpperCase()}</text>
+    </g>
+  `);
+}
+
+// SPLIT CONTRAST: bold left vs. light/faded right
+function tSplit(left, right, leftBold=true){
+  return svg(`
+    <text x="60" y="118" text-anchor="start" font-family="Anton" font-size="72"
+      fill="#0a0a0a">${left.toUpperCase()}</text>
+    <text x="840" y="118" text-anchor="end" font-family="Cormorant Garamond" font-style="italic"
+      font-weight="500" font-size="46" fill="#9a9a94">${right}</text>
+  `);
+}
+
+// FADE: one word bold, trailing word fading toward white (voicelessness / erasure)
+function tFadeOut(bold, fading){
+  return svg(`
+    <text x="60" y="118" font-family="Anton" font-size="56" fill="#0a0a0a">${bold.toUpperCase()}</text>
+    <defs>
+      <linearGradient id="fadeGrad" x1="0" x2="1">
+        <stop offset="0%" stop-color="#0a0a0a"/>
+        <stop offset="100%" stop-color="#ffffff"/>
+      </linearGradient>
+    </defs>
+    <text x="60" y="168" font-family="Cormorant Garamond" font-style="italic" font-size="44"
+      fill="url(#fadeGrad)">${fading}</text>
+  `, 200);
+}
+
+// JITTER: messy hand-set letters, each nudged
+function tJitter(text, size=54){
+  const seedShifts = [0,-4,3,-2,5,-3,2,-5,4,-1,3,-2,1,-4,2];
+  let x = 70, spans = [];
+  for(let i=0;i<text.length;i++){
+    const ch = text[i];
+    const dy = seedShifts[i % seedShifts.length];
+    const rot = (seedShifts[(i+3) % seedShifts.length]) * 0.9;
+    spans.push(`<text x="${x}" y="${118+dy}" transform="rotate(${rot} ${x} ${118+dy})"
+      font-family="Oswald" font-weight="600" font-size="${size}" fill="#0a0a0a">${ch===' '?'&#160;':ch}</text>`);
+    x += ch===' '? size*0.42 : size*0.62;
+  }
+  return svg(spans.join(''));
+}
+
+// STARK: huge, minimal, one command
+function tStark(text, size=88){
+  return svg(`
+    <text x="450" y="128" text-anchor="middle" font-family="Anton" fill="#0a0a0a"
+      textLength="800" lengthAdjust="spacingAndGlyphs" font-size="${size}">${text.toUpperCase()}</text>
+  `);
+}
+
+// -- data -----------------------------------------------------------
+
+const original = [
+  {t:"Authenticity Ain't Optional", pos:"n.", ph:"/ɔːˌθɛnˈtɪsɪti eɪnt ˈɑpʃənl/",
+    defs:["The foundational law and non-negotiable code of the movement; the strategic and moral commitment to total, unfiltered reality.",
+          "The state of profound vulnerability used not as a performance, but as a strategic force; the only valid currency of influence."],
+    use:"In this world of filters and fakes, Ryan lives by authenticity ain't optional.",
+    art: tStamp("AUTHENTICITY AIN'T OPTIONAL", 46)},
+
+  {t:"Breadcrumb Web", pos:"n.", ph:"/ˈbrɛdˌkʌm wɛb/",
+    defs:["A strategic digital and psychological network designed to track, protect, and document interactions for safety, evidence, or counter-surveillance.",
+          "The intentional documentation of one's journey to establish a verified, unassailable timeline of struggle and progress."],
+    use:"He deployed the breadcrumb web before stepping into enemy territory.",
+    art: tMono("Breadcrumb Web", 44)},
+
+  {t:"Build While Bleeding", pos:"v. phr.", ph:"/bɪld waɪl ˈblidɪŋ/",
+    defs:["To commit to creation, grinding, or construction of one's life, craft, or empire even while in the midst of pain, trauma, or chaos; turning suffering into infrastructure.",
+          "The embodiment of The Process; progress that does not wait for healing."],
+    use:"He's building while bleeding, each scar a cornerstone of his future.",
+    art: tDrip("Build While Bleeding", 46, 610)},
+
+  {t:"Concrete Gospel", pos:"n.", ph:"/ˈkɑŋ.krit ˈɡɑs.pəl/",
+    defs:["Street-born spirituality that preaches truth without sugar, turning urban struggle into modern scripture.",
+          "The spiritual wisdom derived not from comfort, but from surviving the block; delivered by The Preacher."],
+    use:"This ain't Sunday school—this is concrete gospel.",
+    art: tGospel("Concrete Gospel", 58)},
+
+  {t:"Concrete Lament", pos:"n.", ph:"/ˈkɑŋ.krit ləˈmɛnt/",
+    defs:["A poetic narrative rooted in street struggle, grief, or survival that transforms raw pain into indelible story and myth.",
+          "The rhythmic expression of a devastating truth."],
+    use:"Their story became a concrete lament echoing the block.",
+    art: tGospel("Concrete Lament", 58)},
+
+  {t:"Digital Nomad Vibes", pos:"n.", ph:"/ˈdɪdʒɪtl ˈnoʊ.mæd vaɪbz/",
+    defs:["A lifestyle or energy defined by constant movement, self-reliance, and online creation as survival and expression.",
+          "The hustle of the modern, unhoused content creator, turning broken tech into tools for impact."],
+    use:"Ryan's digital nomad vibes keep him one step ahead.",
+    art: tMono("digital nomad vibes", 40)},
+
+  {t:"Embrace The Suck", pos:"v. phr.", ph:"/ɛmˈbreɪs ðə sʌk/",
+    defs:["To accept discomfort, failure, or adversity as necessary fuel for growth; thriving through pain by rejecting the fantasy of ease.",
+          "The Marine Corps grandfather's influence manifested as psychological armor."],
+    use:"Life's brutal—embrace the suck or get left behind.",
+    art: tStark("Embrace The Suck", 62)},
+
+  {t:"Faith In The Filth", pos:"n.", ph:"/feɪθ ɪn ðə fɪlθ/",
+    defs:["The practice of finding purpose, grace, or divine insight amid chaos, suffering, or degradation.",
+          "Spiritual realism over sanitized belief; seeing the sacred potential while dwelling in the street."],
+    use:"Even on skid row, she held faith in the filth.",
+    art: tJitter("Faith In The Filth", 50)},
+
+  {t:"Flip Das Script", pos:"v. phr.", ph:"/flɪp dæ skrɪpt/",
+    defs:["To decisively reject predetermined narratives, social expectations, or victimhood; to take control and strategically redefine one's own story.",
+          "A forceful act of Urban Mythmaking."],
+    use:"She flipped das script on her past before the world could.",
+    art: tFlip("Flip Das", "Script", 58)},
+
+  {t:"Flip The Lens", pos:"v. phr.", ph:"/flɪp ðə lɛnz/",
+    defs:["To change one's perspective intentionally to see raw truth, opportunity, or deceit that others miss.",
+          "The strategic mental pivot required for Survival as Strategy."],
+    use:"She flipped the lens and saw the scam coming before it hit.",
+    art: tFlip("Flip The", "Lens", 58)},
+
+  {t:"Grit & Grace", pos:"n. phr.", ph:"/ɡrɪt ənd ɡreɪs/",
+    defs:["The paradoxical fusion of survivalist toughness, street-honed grit, and soft, redemptive humanity (grace).",
+          "Resilience with a pulse of mercy; the core emotional bandwidth of the brand."],
+    use:"Ryan's sermons hit with grit & grace.",
+    art: tSplit("Grit", "& Grace")},
+
+  {t:"Messy But Sacred", pos:"adj.", ph:"/ˈmɛsi bʌt ˈseɪkrɪd/",
+    defs:["Acknowledging life's chaos, disarray, or moral ambiguity while simultaneously recognizing the divinity, meaning, or lesson embedded in the struggle.",
+          "The acceptance that the unpolished truth holds spiritual value."],
+    use:"Their lives are messy but sacred.",
+    art: tJitter("Messy But Sacred", 46)},
+
+  {t:"Poetic Survival", pos:"n.", ph:"/poʊˈɛtɪk sərˈvaɪvəl/",
+    defs:["The act of expressing the truth of one's survival—street-honed, spiritually aware, and artfully told through rhythm and cadence.",
+          "The creative output of the Urban Mythmaker."],
+    use:"Every bar he drops is pure poetic survival.",
+    art: tGospel("Poetic Survival", 56)},
+
+  {t:"Purpose Over Pretend", pos:"n. phr.", ph:"/ˈpɜrpəs oʊvər prɪˈtɛnd/",
+    defs:["Prioritizing genuine intention, utility, and concrete action over appearances, performance, or social approval.",
+          "The practical application of Authenticity Ain't Optional in daily life and hustle."],
+    use:"In every hustle, purpose over pretend.",
+    art: tStark("Purpose Over Pretend", 46)},
+
+  {t:"Raw Redemption", pos:"n.", ph:"/rɔː rɪˈdɛmpʃən/",
+    defs:["The unpolished, earned reclamation of self or purpose from trauma, mistakes, or societal disregard, without gloss or filter.",
+          "A process achieved by utilizing Truth Weaponized Through Rhythm."],
+    use:"He walked through fire to earn raw redemption.",
+    art: tDrip("Raw Redemption", 54, 560)},
+
+  {t:"Raw Truth", pos:"n.", ph:"/rɔː truːθ/",
+    defs:["The unvarnished, unapologetic fact as perceived, experienced, and expressed; unfiltered reality.",
+          "The essential ingredient for content that resonates and cuts deep."],
+    use:"He serves raw truth like bullets.",
+    art: tStark("Raw Truth", 100)},
+
+  {t:"Survival As Strategy", pos:"n. phr.", ph:"/sərˈvaɪvəl æz ˈstrætədʒi/",
+    defs:["Treating endurance, adaptation, and calculated moves in life as conscious, tactical decisions rather than mere chance or reaction.",
+          "Lived difficult experience transformed into a high-level operational doctrine."],
+    use:"Homeless or not, he lived survival as strategy.",
+    art: tMono("Survival As Strategy", 34)},
+
+  {t:"Urban Mythmaker", pos:"n.", ph:"/ˈɜrbən ˈmɪθˌmeɪkər/",
+    defs:["One who crafts stories from street reality, trauma, or survival, transforming them into legend, lesson, or art.",
+          "The archetype that turns margins into memorable tales with a catchy hook. — Syn: Rhythmic Mythmaker."],
+    use:"",
+    art: tGospel("Urban Mythmaker", 54)},
+
+  {t:"Voice Of The Voiceless", pos:"n. phr.", ph:"/vɔɪs ʌv ðə ˈvɔɪsləs/",
+    defs:["A person, often marginalized, who speaks the truth that others fear, suppress, or ignore, amplifying the struggle of those society has abandoned.",
+          "The mission statement in action."],
+    use:"Ryan became the voice of the voiceless for those society left behind.",
+    art: tFadeOut("Voice of the", "voiceless")}
+];
+
+const bwb = [
+  {t:"Blood Equity", pos:"n.", ph:"/blʌd ˈɛkwɪti/",
+    defs:["The accumulated credibility and trust earned by documenting real struggle in public, spent nowhere but on truth.",
+          "The only capital the site trades in; unlike clout, it cannot be bought, only bled for."],
+    use:"He didn't have investors, he had blood equity.",
+    art: tDrip("Blood Equity", 62, 470)},
+
+  {t:"Scar Tissue Content", pos:"n.", ph:"/skɑr ˈtɪʃu ˈkɑntɛnt/",
+    defs:["A piece of writing, video, or track born directly from a documented wound, healed just enough to be shared as a lesson.",
+          "The site's core unit of publishing: the injury, processed into something useful for someone else."],
+    use:"That post wasn't content marketing, it was scar tissue content.",
+    art: tJitter("Scar Tissue Content", 40)},
+
+  {t:"Live Bleed", pos:"v. phr.", ph:"/laɪv blid/",
+    defs:["To document a struggle in real time, unedited, while it is still happening—before the outcome is known.",
+          "The opposite of the redemption arc told after the fact; the risk of publishing the wound while it's still open."],
+    use:"He didn't wait for the win, he went live bleed the night the eviction notice hit.",
+    art: tStamp("Live Bleed", 60)},
+
+  {t:"The Bleed Ledger", pos:"n.", ph:"/ðə blid ˈlɛdʒər/",
+    defs:["The site's running public record of the build—every loss, every win, every cost, kept in plain sight.",
+          "An accountability instrument as much as an archive; a receipt for the claim that this was earned, not staged."],
+    use:"Check the bleed ledger before you doubt the story.",
+    art: tMono("The Bleed Ledger", 36)},
+
+  {t:"Patch The Wound, Not The Story", pos:"v. phr.", ph:"/pætʃ ðə wund nɑt ðə ˈstɔri/",
+    defs:["The site's editorial law: fix the actual problem in your life before you fix how the problem sounds.",
+          "A rejection of narrative-polishing that leaves the real damage untouched underneath."],
+    use:"He went back and patched the wound, not the story—cancelled the show, got the surgery.",
+    art: tGospel("Patch The Wound, Not The Story", 34)},
+
+  {t:"Bootstrapped & Bruised", pos:"adj.", ph:"/ˈbutˌstræpt ənd bruzd/",
+    defs:["Describes any project on the site built with no outside capital, funded instead by grit, overtime, and injury.",
+          "A badge, not a complaint; proof the build was self-financed at real physical cost."],
+    use:"The whole studio is bootstrapped & bruised, built between shifts.",
+    art: tSplit("Bootstrapped", "& bruised")},
+
+  {t:"Comeback Architecture", pos:"n.", ph:"/ˈkʌmˌbæk ˈɑrkɪˌtɛktʃər/",
+    defs:["The structured, step-by-step chronicling of a rebuild, laid out like a blueprint so someone else can follow it.",
+          "Turning one person's recovery into a repeatable set of instructions rather than a one-off inspirational story."],
+    use:"He didn't just post that he made it back, he published the comeback architecture.",
+    art: tStark("Comeback Architecture", 44)},
+
+  {t:"Bleed Rate", pos:"n.", ph:"/blid reɪt/",
+    defs:["The pace at which a person is spending health, time, or savings to keep building; a measure of unsustainable cost.",
+          "A self-audit metric the site preaches: know your bleed rate before it outpaces what you're building."],
+    use:"Slow down—your bleed rate is faster than your build rate.",
+    art: tMono("Bleed Rate", 46)},
+
+  {t:"Witness Mode", pos:"n.", ph:"/ˈwɪtnəs moʊd/",
+    defs:["The mode of engagement the site demands from its audience: not to pity, not to consume, but to bear witness to the reality of the struggle.",
+          "Observation as a form of validation."],
+    use:"He didn't ask for a handout, he just put them in witness mode.",
+    art: tFadeOut("Witness", "Mode")},
+
+  {t:"Dark Elegance", pos:"n.", ph:"/dɑrk ˈɛlɪɡəns/",
+    defs:["A design aesthetic and coping mechanism: making the bare minimum look intentional, sophisticated, and lethal.",
+          "Transforming poverty of resources into a hyper-refined, striking visual and operational signature."],
+    use:"No graphics budget, just pure dark elegance.",
+    art: tSplit("Dark", "Elegance")},
+
+  {t:"Zero-Commit Overhead", pos:"n.", ph:"/ˈzɪroʊ-kəˈmɪt ˈoʊvərˌhɛd/",
+    defs:["The architectural and personal philosophy of deploying with zero financial dependencies. Agility born of poverty.",
+          "If it costs money to maintain, it is an enemy of the build."],
+    use:"The entire backend runs on zero-commit overhead.",
+    art: tMono("Zero-Commit Overhead", 34)}
+];
+
+// -- render logic -----------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allTerms = [...original, ...bwb].sort((a, b) => a.t.localeCompare(b.t));
+  const rail = document.getElementById('rail');
+  
+  let htmlOutput = '';
+  let currentLetter = '';
+  let globalIndex = 1;
+
+  allTerms.forEach(term => {
+    const firstChar = term.t.charAt(0).toUpperCase();
+    
+    // Inject section headers alphabetically
+    if (firstChar !== currentLetter) {
+      currentLetter = firstChar;
+      htmlOutput += `
+        <div class="section-break">
+          <span class="num">${currentLetter}</span>
+          <h2>Lexicon Set</h2>
+          <div class="line"></div>
+        </div>
+      `;
+    }
+
+    const num = String(globalIndex++).padStart(2, '0');
+    const defsHtml = term.defs.map(d => `<li>${d}</li>`).join('');
+    const usageHtml = term.use ? `<div class="usage">“${term.use}”</div>` : '';
+
+    htmlOutput += `
+      <div class="card">
+        <div class="idx">
+          <span>${num}</span>
+          <span class="pos">${term.pos}</span>
+        </div>
+        <div class="content">
+          <div class="phon">${term.ph}</div>
+          <div class="art-wrap">${term.art}</div>
+          <div class="defs">
+            <ol>${defsHtml}</ol>
+          </div>
+          ${usageHtml}
+        </div>
+      </div>
+    `;
+  });
+
+  rail.innerHTML = htmlOutput;
+});
+</script>
+</body>
+</html>
