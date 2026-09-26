@@ -4,71 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cartography · RyanrealAF</title>
-  <meta name="description" content="The RyanrealAF creative archive: songs, narratives, theory, field writing, and the documents that map the work.">
+  <meta name="description" content="A map of connected bodies of work, creative lineages, and field records from the RyanrealAF archive.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="masthead">
   <div class="eyebrow">BUILD WHILE BLEEDING · ARCHIVE 04</div>
   <h1>Cartography</h1>
-  <p class="dek">Writings, songs, PSAs, theories, and field documents from the RyanrealAF archive.</p>
+  <p class="dek">Not a portfolio. A map of connected bodies of work, creative lineages, and the artifacts that document them.</p>
   <div class="rule"></div>
 </header>
 
 <main>
   <section class="intro">
-    <div class="index">01 / THE ARCHIVE</div>
+    <div class="index">01 / THE MAP</div>
     <div>
-      <h2>Not a portfolio. A map.</h2>
-      <p>Some work arrives as a song. Some arrives as a confession, a field note, a theory, or a document that refuses to stay in one category. Cartography keeps the pieces together without sanding off their edges.</p>
+      <h2>Work does not arrive in folders.</h2>
+      <p>A song can belong to a chapter. A poem can answer another poem years later. A field note can become a theory, and a theory can become a system. Cartography preserves those connections instead of flattening everything into a list of files.</p>
     </div>
   </section>
 
   <section class="feature">
     <div class="feature-copy">
-      <span class="tag">CORE ARCHIVE</span>
+      <span class="tag">CORE MAP</span>
       <h2>The RyanrealAF Codex</h2>
-      <p>A comprehensive narrative and discographic map of the work, themes, recurring ideas, and creative lineage.</p>
+      <p>The broadest narrative and discographic map in the archive. Start here for the larger vocabulary, lineage, and recurring architecture behind the work.</p>
       <a href="The%20RyanrealAF%20Codex_%20A%20Comprehensive%20Discography%20and%20Narrative%20Cartography.pdf">Open the Codex →</a>
     </div>
     <div class="feature-mark">C<br>O<br>D<br>E<br>X</div>
   </section>
 
-  <section class="section">
-    <div class="section-head"><span>02</span><h2>Featured territories</h2></div>
-    <div class="grid">
-      <article class="card dark">
-        <span class="tag">GENESIS</span>
-        <h3>What If / Music Box / Darker</h3>
-        <p>A five-track creative conversation moving from wonder to memory, suspicion, manifestation, and revelation.</p>
-        <a href="What%20if%20goes%20darker.pdf">Enter the series →</a>
+  <section class="section" id="territories">
+    <div class="section-head"><span>02</span><h2>Territories</h2></div>
+    <div class="territory-grid">
+      <article class="territory territory-feature">
+        <div class="meta">01 / 2018–2026</div>
+        <h3>Emily + Ryan</h3>
+        <p>The 12-chapter creative journey: from the Santa Barbara underground to What If, Music Box, the dark pivot, Scars Write the Book, Borrowed Heart, and Already Is.</p>
+        <button class="enter" data-territory="emily">Enter the body of work →</button>
       </article>
-      <article class="card">
-        <span class="tag">NARRATIVE</span>
-        <h3>Concrete Awakening</h3>
-        <p>The complete narrative archive of grit, survival, identity, faith, and the reconstruction of a life from the ground up.</p>
-        <a href="Concrete%20Awakening-%20The%20Complete%20Narrative.pdf">Read the narrative →</a>
+      <article class="territory">
+        <div class="meta">02 / NARRATIVE</div>
+        <h3>Concrete / Survival</h3>
+        <p>Concrete Awakening, Concrete Communion, Water and Concrete, Chipped Tooth Grace, and the survival archive.</p>
+        <button class="enter" data-territory="concrete">Open territory →</button>
       </article>
-      <article class="card">
-        <span class="tag">LEXICON</span>
-        <h3>Ryan Real AF · The Lexicon</h3>
-        <p>A visual vocabulary of the terms, laws, symbols, and language that form the RyanrealAF operating system.</p>
-        <a href="RYAN%20REAL%20AF%20%E2%80%94%20THE%20LEXICON.html">Open the lexicon →</a>
+      <article class="territory">
+        <div class="meta">03 / SYSTEMS</div>
+        <h3>The RyanrealAF Architecture</h3>
+        <p>Codex, Lexicon, Genesis analysis, Script-Squeeze, and the conceptual systems surrounding the work.</p>
+        <button class="enter" data-territory="systems">Open territory →</button>
+      </article>
+      <article class="territory">
+        <div class="meta">04 / MUSIC</div>
+        <h3>Working Music Archive</h3>
+        <p>Character pieces, darker tracks, direct statements, and songs that sit outside the Emily + Ryan chronology.</p>
+        <button class="enter" data-territory="music">Open territory →</button>
+      </article>
+      <article class="territory">
+        <div class="meta">05 / FIELD</div>
+        <h3>Field / Place / PSA</h3>
+        <p>Documents rooted in place, observation, public systems, and lived geography.</p>
+        <button class="enter" data-territory="field">Open territory →</button>
+      </article>
+      <article class="territory">
+        <div class="meta">06 / OUTLAW CHRONICLES</div>
+        <h3>Shadows + Sovereigns</h3>
+        <p>The darker narrative territory: characters, mythology, survival, and the outlaw archive.</p>
+        <button class="enter" data-territory="outlaw">Open territory →</button>
       </article>
     </div>
   </section>
 
-  <section class="section" id="works">
-    <div class="section-head"><span>03</span><h2>Browse the archive</h2></div>
-    <div class="filters" role="group" aria-label="Filter archive">
+  <section class="section journey" id="journey">
+    <div class="section-head"><span>03</span><h2>Body of work</h2></div>
+    <div id="territory-view"></div>
+  </section>
+
+  <section class="section" id="archive">
+    <div class="section-head"><span>04</span><h2>Artifact index</h2></div>
+    <div class="filters" role="group" aria-label="Filter artifact index">
       <button class="active" data-filter="all">All</button>
       <button data-filter="music">Music</button>
       <button data-filter="narrative">Narrative</button>
       <button data-filter="theory">Theory</button>
-      <button data-filter="relationship">Emily / Ryan</button>
       <button data-filter="field">Field / PSA</button>
+      <button data-filter="relationship">Emily / Ryan</button>
     </div>
-    <div class="archive" id="archive"></div>
+    <div class="archive-grid" id="archive-list"></div>
   </section>
 </main>
 
