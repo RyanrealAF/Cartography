@@ -1,12 +1,12 @@
 const works=[
-["I Said Good Day, Sir!","music","Dark cinematic survival manifesto.","I%20Said%20Good%20Day,%20Sir!.pdf"],
-["Intro - Spoken Word","music","Identity, gossip, and the refusal to perform a false self.","Intro%20-%20Spoken%20word,%20tone%20is%20calm%20but%20cutting%20(Ryan%20Real%20A-F).pdf"],
-["If you're on my team","music","Authenticity, accountability, loyalty, and the cost of masks.","If%20you're%20on%20my%20team%20(Loyalty%20Manifesto).pdf"],
-["Grit and GRACE","theory","Street grit fused with sacred grace.","Grit%20and%20GRACE.pdf"],
+["Dance of Dark and Light","music","A study in contrast, tension, and balance.","Dance%20of%20dark%20and%20light.pdf"],
+["RyanrealAF Master Brand & Strategy Codex","theory","The strategic and conceptual architecture behind the RyanrealAF identity.","RyanrealAF%20Master%20Brand%20%26%20Strategy%20Codex.md.markdown"],
+["Creative Journey Report","relationship","A four-year record of the Emily and Ryan creative partnership.","Creative%20Journey%20Report_%20The%20Emily%20and%20Ryan%20Partnership%20(Four-Year%20Evolution).txt"],
 ["Ms. Ghost","relationship","Honesty, communication, trust, and uncertainty.","Song%20Title-%20Ms.%20Ghost%20.pdf"],
 ["What If?","relationship","The Genesis spark: fate, language, memory, and the impossible question.","What%20if%20goes%20darker.pdf"],
 ["Emily's Music Box","relationship","A memory preserved as rhythm, texture, and duet.","Emily's%20Music%20Box.pdf"],
 ["Love and Wifey","relationship","A study in connection, surrender, and movement without control.","Love%20and%20wifey%20(1).pdf"],
+["Love Is Like Wu Wei","relationship","Love, surrender, and movement without force.","Love%20is%20like%20Wu%20Wei.pdf"],
 ["Sweet Evilness","relationship","The darker response: poetry, power, and the spell of rhythm.","Sweet%20Evilness.pdf"],
 ["Scars Write the Book","narrative","Pain reframed as syllabus, archive, and hard-earned education.","scars%20write%20the%20book%20.pdf"],
 ["Concrete Communion","narrative","Faith, struggle, and sacred meaning in hard places.","Concrete%20Communion%20%20(1).pdf"],
@@ -20,7 +20,6 @@ const works=[
 ["Beta Bro Batman","music","A character-driven entry from the archive.","Beta%20Bro%20Batman.pdf"],
 ["Can't Do It Like Me","music","A direct statement of voice and distinction.","CAN'T%20DO%20IT%20LIKE%20ME%20(1).pdf"],
 ["Ringmaster of Ruin","narrative","A darker character study from the archive.","RINGMASTER%20OF%20RUIN.pdf"],
-["What If Goes Darker","relationship","The turn from wonder into suspicion and deliberate design.","What%20if%20goes%20darker.pdf"],
 ["You Know What's Up","music","A concise piece from the working song archive.","you%20know%20what's%20up%20.pdf"]
 ];
 
